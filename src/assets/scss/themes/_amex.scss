@@ -1,0 +1,276 @@
+/* AMEX - JUSTIFICATIF DE REVENUS */
+
+$amex-white: #FFFFFF;
+$amex-primary : #016FCE;
+$amex-secondary : #707070;
+$amex-lightgrey: #F7F8F9;
+$amex-black:#001759;
+$amex-border-color: #ecedee;
+$margin-sm : 20px;
+$margin-md : 40px;
+$margin-lg : 90px;
+
+body {
+  font-family: 'BentonSans-Book';
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  @include media-breakpoint-down(sm) {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
+p, a, li, strong, span {
+  font-family: 'Helvetica-Neue';
+}
+
+p {
+  color: $amex-secondary;
+  margin-bottom: 0;
+}
+
+nav {
+  padding: 8px 0 8px 40px;
+}
+
+.marged {
+  margin-left: $margin-lg;
+  margin-right: $margin-lg;
+
+  @include media-breakpoint-down(md) {
+    margin-left: $margin-md;
+    margin-right: $margin-md;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.margin-top {
+  margin-top: $margin-md;
+}
+
+.margin-top-sm {
+  margin-top: $margin-sm;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  background-image: url('/assets/img/header.jpg');
+  height: 350px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  @include media-breakpoint-down(sm) {
+    height: 250px;
+  }
+}
+
+h1 {
+  text-align: left;
+  font-family: "BentonSans-Book";
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  padding: 40px;
+  margin: 0;
+  color: $amex-white;
+  opacity: 1;
+  text-transform: none;
+  @include media-breakpoint-down(sm) {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+h2 {
+  text-align: left;
+  font-family: "BentonSans-Book";
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  padding: 0;
+  margin: 0 0 18px 0;
+  color: $amex-primary;
+  opacity: 1;
+  text-transform: none;
+}
+
+h3 {
+  text-align: left;
+  font-family: "BentonSans-Book";
+  font-size: 20px;
+  line-height: 28px;
+  padding: 0;
+  margin: 0;
+  color: $amex-primary;
+  opacity: 1;
+  text-transform: none;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  >li {
+    color: $amex-primary;
+
+    &::before {
+      content: '- ';
+    }
+  }
+}
+
+h2.docs {
+  @include media-breakpoint-down(sm) {
+    padding: 65px 0 0 0;
+    background-image: url('/assets/img/icon-doc.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center;
+  } 
+}
+
+div.docs {
+  background-image: url('/assets/img/icon-doc.png');
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding: 0 0 0 65px;
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+    background-image: none;
+  }
+}
+
+div.flex {
+  display: flex;
+}
+
+div.encart {
+  background-color: $amex-lightgrey;
+  padding: 20px;
+  width: 100%;
+
+  &.bleu {
+    background-color: $amex-primary;
+
+    >h2 {
+      color: $amex-white;
+    }
+
+    >h3 {
+      color: $amex-white;
+    }
+  }
+}
+
+footer {
+  margin-top: 40px;
+
+  p {
+    color: $amex-secondary;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+
+    >a {
+      color: $amex-primary;
+      font-weight: normal;
+      text-decoration: none;
+    }
+
+    >hr {
+      margin: 21px 0;
+    }
+
+    >span {
+      color: $amex-secondary;
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+}
+
+div.carousel-item>img {
+  width: 100%;
+  height: auto;
+}
+
+br.cesure-mobile {
+  @include media-breakpoint-up(sm) {
+    display: none;
+  }
+}
+
+.tooltip {
+  box-shadow: 7px 8px 5px -6px rgba(0,0,0,0.75);
+  z-index: 99999999;
+}
+
+.bs-tooltip-right .arrow::before {
+  border-right-color: $amex-white;
+}
+
+.tooltip-inner {
+  background-color: $amex-white;
+}
+
+
+.carousel-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: stretch;
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
+  > a {
+    width: 50%;
+    text-align: center;
+    padding: 24px;
+    text-decoration: none;
+    color: $amex-primary;
+    font-size: 18px;
+    line-height: 18px;
+    border-top: 1px solid $amex-border-color;
+    border-left: 1px solid $amex-border-color;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+    &:nth-child(2) {
+      border-right: 1px solid $amex-border-color;
+    }
+    &.carousel-header-active {
+      border-top: 3px solid $amex-black;
+      padding-top: 22px;
+      color: $amex-black;
+    }
+  }
+}
+
+.carousel-body {
+  border: 1px solid $amex-border-color;
+  padding: 24px;
+  @include media-breakpoint-down(sm) {
+   padding: 0;
+  }
+}
