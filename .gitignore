@@ -47,5 +47,4 @@ node_modules/
 package-lock.json
 
 ### Custom Files ###
-dist/
 accessibility-reports/
