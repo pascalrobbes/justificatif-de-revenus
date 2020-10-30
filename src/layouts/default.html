@@ -15,21 +15,20 @@
   <link rel="stylesheet" href="{{root}}assets/fonts/Helvetica-Neue.css">
   <link rel="stylesheet" href="{{root}}assets/fonts/Helvetica-Neue-Light.css">
   <link rel="stylesheet" href="{{root}}assets/fonts/Helvetica-Neue-Bold.css">
-
 </head>
 
-<body>
-  <div class="container-fluid">
-    <div class="container">
-      {{> navigation}}
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        {{> navigation}}
+      </div>
+      <main role="main">
+        {{> body}}
+      </main>
+      <div class="container">
+        {{> footer}}
+      </div>
     </div>
-    <main role="main">
-      {{> body}}
-    </main>
-    <div class="container">
-      {{> footer}}
-    </div>
-  </div>
-</body>
+  </body>
 
 </html>

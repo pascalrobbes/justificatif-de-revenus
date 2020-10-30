@@ -284,6 +284,12 @@ footer {
 
 }
 
+.carousel-container {
+  @include media-breakpoint-up(lg) {
+    margin-top: $margin-sm;
+  }
+}
+
 div.carousel-item>img {
   width: 100%;
   height: auto;
@@ -374,6 +380,9 @@ br.cesure-mobile {
 
     @include media-breakpoint-down(sm) {
       width: 100%;
+      &:nth-child(1) {
+        border-right: 1px solid $grey-medium;
+      }
     }
 
     &:nth-child(2) {
