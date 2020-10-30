@@ -72,32 +72,74 @@
                     <div class="row">
                         <div class="col-lg-9">
                             <div class="carousel-container">
-                                <div class="carousel-header">
-                                    <a data-position='0' class="carousel-header-active" href="#!">Depuis un ordinateur<br/>sur impots.gouv.fr</a>
-                                    <a data-position='1' href="#!">Depuis mobile<br/>sur l’app impôts.gouv</a>
+                                <div class="carousel-header" role="tablist">
+                                    <a data-position="0" data-toggle="tab" href="#carousel-desktop-container" role="tab" class="carousel-header-active">Depuis un ordinateur<br />sur impots.gouv.fr</a>
+                                    <a data-position="1" data-toggle="tab" href="#carousel-mobile-container" role="tab">Depuis mobile<br />sur l’app impôts.gouv</a>
                                 </div>
-                                <div class="carousel-body">
-                                    <div id="carousel" class="carousel slide" data-ride="carousel">
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                        </ol>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="assets/img/slider1.png" alt="">
+                                <div class="tab-content carousel-body" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="carousel-desktop-container" role="tabpanel">
+                                        <div id="carousel-desktop" class="carousel slide" data-ride="false">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carousel-desktop" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-desktop" data-slide-to="1"></li>
+                                                <li data-target="#carousel-desktop" data-slide-to="2"></li>
+                                                <li data-target="#carousel-desktop" data-slide-to="3"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="assets/img/amex-slider-desktop_1@2x.png" alt="*">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/amex-slider-desktop_2@2x.png" alt="*">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/amex-slider-desktop_3@2x.png" alt="*">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/amex-slider-desktop_4@2x.png" alt="*">
+                                                </div>
                                             </div>
-                                            <div class="carousel-item">
-                                                <img src="assets/img/slider2.png" alt="">
-                                            </div>
+                                            <a class="carousel-control-prev" href="#carousel-desktop" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Précédent</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carousel-desktop" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Suivant</span>
+                                            </a>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Précédent</span>
-                                        </a>
-                                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Suivant</span>
-                                        </a>
+                                    </div>
+                                    <div class="tab-pane fade" id="carousel-mobile-container" role="tabpanel">
+                                        <div id="carousel-mobile" class="carousel slide" data-ride="false">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carousel-mobile" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-mobile" data-slide-to="1"></li>
+                                                <li data-target="#carousel-mobile" data-slide-to="2"></li>
+                                                <li data-target="#carousel-mobile" data-slide-to="3"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="assets/img/amex_slider-mobile_1@2x.png" alt="*">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/amex_slider-mobile_2@2x.png" alt="*">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/amex_slider-mobile_3@2x.png" alt="*">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/amex_slider-mobile_4@2x.png" alt="*">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carousel-mobile" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Précédent</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carousel-mobile" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Suivant</span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
