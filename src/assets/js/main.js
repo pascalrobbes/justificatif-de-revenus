@@ -15,8 +15,6 @@ $(document).ready(function () {
   $(".carousel-header>a").on("click", function () {
     $(".carousel-header>a").removeClass("carousel-header-active");
     $(this).addClass("carousel-header-active");
-    var position = parseInt($(this).attr("data-position"));
-    $("#carousel").carousel(position);
   });
 
 });
