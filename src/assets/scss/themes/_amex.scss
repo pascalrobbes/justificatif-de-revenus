@@ -9,6 +9,7 @@ $grey-dark-plus: #333333;
 $blue-amex: #006FCF;
 $blue-amex-dark: #00175A;
 
+$margin-xs : 10px;
 $margin-sm : 20px;
 $margin-md : 40px;
 $margin-lg : 90px;
@@ -18,20 +19,30 @@ body {
   font-size: 15px;
   line-height: 22px;
   background-color: $white;
+  margin-bottom: $margin-sm;
 }
 
-.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
   @include media-breakpoint-down(sm) {
     padding-left: 4px;
     padding-right: 4px;
   }
 }
 
-p, a, li, span {
+p,
+a,
+li,
+span {
   font-family: 'Helvetica-Neue-Light';
 }
 
-strong, .strong {
+strong,
+.strong {
   font-family: 'Helvetica-Neue-Light';
   font-weight: bold;
 }
@@ -68,6 +79,10 @@ nav {
   margin-top: $margin-sm;
 }
 
+.margin-top-xs {
+  margin-top: $margin-xs;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -79,9 +94,11 @@ header {
   height: 310px;
   background-position: center top;
   background-repeat: no-repeat;
+
   @include media-breakpoint-down(md) {
     background-image: url('../img/header-md.png');
   }
+
   @include media-breakpoint-down(sm) {
     background-image: url('../img/header-sm.png');
     height: 510px;
@@ -103,12 +120,13 @@ h1 {
   color: $white;
   opacity: 1;
   text-transform: none;
+
   @include media-breakpoint-down(sm) {
     font-size: 28px;
     line-height: 32px;
     padding: 17px;
     text-align: center;
-    width:100%;
+    width: 100%;
   }
 }
 
@@ -160,6 +178,7 @@ ul {
   align-content: flex-start;
   align-items: flex-start;
   padding: 0;
+
   >li {
     color: $blue-amex;
 
@@ -176,7 +195,7 @@ h2.docs {
     background-position: center top;
     background-repeat: no-repeat;
     text-align: center;
-  } 
+  }
 }
 
 div.docs {
@@ -185,6 +204,7 @@ div.docs {
   background-repeat: no-repeat;
   padding: 0 0 0 75px;
   background-size: auto;
+
   @include media-breakpoint-down(sm) {
     padding: 0;
     background-image: none;
@@ -196,12 +216,29 @@ div.flex {
 }
 
 div.encart {
-  background-color: $grey-light;
   padding: 20px;
   width: 100%;
 
-  > h3 {
+  >h3 {
     margin-bottom: 10px;
+  }
+
+  &.gris {
+    background-color: $grey-light;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: $margin-md;
+
+      br {
+        content: ' ';
+        width: 9px;
+        height: 18px;
+
+        &::before {
+          content: ' '
+        }
+      }
+    }
   }
 
   &.bleu {
@@ -228,7 +265,7 @@ footer {
     text-align: center;
     margin: 0;
 
-    > a {
+    >a {
       color: $blue-amex;
       font-weight: normal;
       text-decoration: none;
@@ -252,6 +289,45 @@ div.carousel-item>img {
   height: auto;
 }
 
+.carousel-control-prev-icon {
+  background-image: url('../img/arrow-left.svg');
+  height: 40px;
+  width: 40px;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.carousel-control-next-icon {
+  background-image: url('../img/arrow-right.svg');
+  height: 40px;
+  width: 40px;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.carousel-indicators {
+  margin-bottom: 0;
+}
+
+.carousel-indicators li {
+  background-image: url('../img/dot.svg');
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  opacity: 1;
+  margin: 0;
+}
+
+.carousel-indicators li.active {
+  background-image: url('../img/dot-active.svg');
+  height: 40px;
+  width: 40px;
+}
+
 br.cesure-mobile {
   @include media-breakpoint-up(sm) {
     display: none;
@@ -259,7 +335,7 @@ br.cesure-mobile {
 }
 
 .tooltip {
-  box-shadow: 7px 8px 5px -6px rgba(0,0,0,0.75);
+  box-shadow: 7px 8px 5px -6px rgba(0, 0, 0, 0.75);
   z-index: 99999999;
 }
 
@@ -278,25 +354,32 @@ br.cesure-mobile {
   justify-content: space-between;
   align-content: stretch;
   align-items: stretch;
+
   @include media-breakpoint-down(sm) {
     flex-direction: column;
   }
-  > a {
+
+  >a {
     width: 50%;
     text-align: left;
     padding: 24px;
     text-decoration: none;
     color: $blue-amex;
     font-size: 18px;
+    font-family: 'Helvetica-Neue';
+    font-weight: 600;
     line-height: 18px;
-    border-top: 1px solid $grey-light;
-    border-left: 1px solid $grey-light;
+    border-top: 1px solid $grey-medium;
+    border-left: 1px solid $grey-medium;
+
     @include media-breakpoint-down(sm) {
       width: 100%;
     }
+
     &:nth-child(2) {
-      border-right: 1px solid $grey-light;
+      border-right: 1px solid $grey-medium;
     }
+
     &.carousel-header-active {
       border-top: 3px solid $blue-amex-dark;
       padding-top: 22px;
@@ -306,9 +389,22 @@ br.cesure-mobile {
 }
 
 .carousel-body {
-  border: 1px solid $grey-light;
+  border: 1px solid $grey-medium;
   padding: 24px;
+
   @include media-breakpoint-down(sm) {
-   padding: 0;
+    padding: 0;
+  }
+}
+
+.hidden-lg {
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+
+.hidden-md {
+  @include media-breakpoint-down(md) {
+    display: none;
   }
 }
