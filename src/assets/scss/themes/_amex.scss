@@ -357,6 +357,7 @@ br.cesure-mobile {
 .tooltip {
   box-shadow: 7px 8px 5px -6px rgba(0, 0, 0, 0.75);
   z-index: 99999999;
+  opacity: 1 !important;
 }
 
 .bs-tooltip-right .arrow::before {
