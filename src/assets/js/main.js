@@ -29,7 +29,7 @@ function mobileActions() {
   $("div#carousel-desktop-container").addClass('is-hidden');
   $("div#carousel-mobile-container").removeClass('is-hidden');
   $('.has_tooltip').tooltip({
-    placement: 'bottom',
+    placement: 'auto',
     template: '<div class="tooltip" role="tooltip"><div class="tooltip-inner"></div></div>',
     html: true
   })}

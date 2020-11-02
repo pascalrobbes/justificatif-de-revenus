@@ -15173,17 +15173,30 @@ div.carousel-item > img {
   border: none;
 }
 
-/* line 388, src/assets/scss/themes/_amex.scss */
+/* line 386, src/assets/scss/themes/_amex.scss */
+.tooltip-inner > img {
+  width: 320px;
+  height: auto;
+}
+
+@media (max-width: 767.98px) {
+  /* line 386, src/assets/scss/themes/_amex.scss */
+  .tooltip-inner > img {
+    width: 240px;
+  }
+}
+
+/* line 395, src/assets/scss/themes/_amex.scss */
 .bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="right"] .arrow::before {
   border-right-color: #FFFFFF;
 }
 
-/* line 392, src/assets/scss/themes/_amex.scss */
+/* line 399, src/assets/scss/themes/_amex.scss */
 .tooltip-inner {
   background-color: #FFFFFF;
 }
 
-/* line 396, src/assets/scss/themes/_amex.scss */
+/* line 403, src/assets/scss/themes/_amex.scss */
 .carousel-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15205,7 +15218,7 @@ div.carousel-item > img {
 }
 
 @media (max-width: 767.98px) {
-  /* line 396, src/assets/scss/themes/_amex.scss */
+  /* line 403, src/assets/scss/themes/_amex.scss */
   .carousel-header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -15214,7 +15227,7 @@ div.carousel-item > img {
   }
 }
 
-/* line 408, src/assets/scss/themes/_amex.scss */
+/* line 415, src/assets/scss/themes/_amex.scss */
 .carousel-header > a {
   width: 50%;
   text-align: left;
@@ -15230,56 +15243,56 @@ div.carousel-item > img {
 }
 
 @media (max-width: 767.98px) {
-  /* line 408, src/assets/scss/themes/_amex.scss */
+  /* line 415, src/assets/scss/themes/_amex.scss */
   .carousel-header > a {
     width: 100%;
   }
-  /* line 424, src/assets/scss/themes/_amex.scss */
+  /* line 431, src/assets/scss/themes/_amex.scss */
   .carousel-header > a:nth-child(1) {
     border-right: 1px solid #D9D9D6;
   }
 }
 
-/* line 429, src/assets/scss/themes/_amex.scss */
+/* line 436, src/assets/scss/themes/_amex.scss */
 .carousel-header > a:nth-child(2) {
   border-right: 1px solid #D9D9D6;
 }
 
-/* line 433, src/assets/scss/themes/_amex.scss */
+/* line 440, src/assets/scss/themes/_amex.scss */
 .carousel-header > a.carousel-header-active {
   border-top: 3px solid #00175A;
   padding-top: 22px;
   color: #00175A;
 }
 
-/* line 441, src/assets/scss/themes/_amex.scss */
+/* line 448, src/assets/scss/themes/_amex.scss */
 .carousel-body {
   border: 1px solid #D9D9D6;
   padding: 24px;
 }
 
 @media (max-width: 767.98px) {
-  /* line 441, src/assets/scss/themes/_amex.scss */
+  /* line 448, src/assets/scss/themes/_amex.scss */
   .carousel-body {
     padding: 0;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 450, src/assets/scss/themes/_amex.scss */
+  /* line 457, src/assets/scss/themes/_amex.scss */
   .hidden-lg {
     display: none;
   }
 }
 
 @media (max-width: 1023.98px) {
-  /* line 456, src/assets/scss/themes/_amex.scss */
+  /* line 463, src/assets/scss/themes/_amex.scss */
   .hidden-md {
     display: none;
   }
 }
 
-/* line 462, src/assets/scss/themes/_amex.scss */
+/* line 469, src/assets/scss/themes/_amex.scss */
 .is-hidden {
   display: none;
 }
