@@ -8,9 +8,8 @@
     <title>American Express FR : Cartes de Paiement &amp; Services Privilégiés</title>
     <link rel="icon" href="assets/img/favicon.ico" />
 
-    <!-- build:css -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="assets/css/main.min.css">
+
     <link rel="stylesheet" href="assets/css/rtl.css">
     <link rel="stylesheet" href="assets/fonts/BentonSans-Book.css">
     <link rel="stylesheet" href="assets/fonts/Helvetica-Neue-Regular.css">
@@ -61,9 +60,13 @@
                                 <h2 class="docs">Les documents acceptés</h2>
                                 <div class="docs">
                                     <p>Sont accept&eacute;s comme justificatifs de revenus</p>
-                                    <ul>
+                                    <ul class="hidden-sm hidden-md">
                                         <li class="has_tooltip" title='<img src="assets/img/amex_specimen_avis-impots@2x.png">'>le dernier avis d’impôt sur le revenu,</li>
-                                        <li class="has_tooltip" title='<img src="assets/img/amex_specimen_avis-impots@2x.png">'>ou le dernier avis de situation déclarative à l’impôt sur le revenu.</li>
+                                        <li class="has_tooltip" title='<img src="assets/img/amex_specimen_avis-situation-dclarative@2x.png">'>ou le dernier avis de situation déclarative à l’impôt sur le revenu.</li>
+                                    </ul>
+                                    <ul class="hidden-lg">
+                                        <li data-toggle="modal" data-target="#avis-impots" title='<img src="assets/img/amex_specimen_avis-impots@2x.png">'>le dernier avis d’impôt sur le revenu,</li>
+                                        <li data-toggle="modal" data-target="#avis-situation" title='<img src="assets/img/amex_specimen_avis-situation-dclarative@2x.png">'>ou le dernier avis de situation déclarative à l’impôt sur le revenu.</li>
                                     </ul>
                                     <p><strong>Ne sont pas acceptés les déclarations de revenus.</strong></p>
                                 </div>
@@ -171,6 +174,26 @@
                 </div>
             </div>
 
+            <div class="modal fade" id="avis-impots" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/img/amex_specimen_avis-impots@2x.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="avis-situation" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/img/amex_specimen_avis-situation-dclarative@2x.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </main>
         <div class="container">
             <footer class="marged">
@@ -179,14 +202,8 @@
                 <hr>
                 <span>&copy; 2020 AMEX</span>
             </footer>
-            <!-- build:js -->
-            <script src="assets/vendor/js/jquery.js"></script>
-            <script src="assets/vendor/js/popper.js"></script>
-            <script src="assets/vendor/js/bootstrap.js"></script>
-            <script src="assets/js/util/autoPadding.js"></script>
-            <script src="assets/js/util/crossPlatform.js"></script>
-            <script src="assets/js/main.js"></script>
-            <!-- endbuild -->
+            <script src="assets/js/main.min.js"></script>
+
         </div>
     </div>
 </body>

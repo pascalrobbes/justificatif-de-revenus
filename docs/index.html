@@ -60,9 +60,13 @@
                                 <h2 class="docs">Les documents acceptés</h2>
                                 <div class="docs">
                                     <p>Sont accept&eacute;s comme justificatifs de revenus</p>
-                                    <ul>
-                                        <li class="has_tooltip" title='<img src="assets/img/amex_specimen_avis-impots.png">'>le dernier avis d’impôt sur le revenu,</li>
-                                        <li class="has_tooltip" title='<img src="assets/img/amex_specimen_avis-situation-dclarative.png">'>ou le dernier avis de situation déclarative à l’impôt sur le revenu.</li>
+                                    <ul class="hidden-sm hidden-md">
+                                        <li class="has_tooltip" title='<img src="assets/img/amex_specimen_avis-impots@2x.png">'>le dernier avis d’impôt sur le revenu,</li>
+                                        <li class="has_tooltip" title='<img src="assets/img/amex_specimen_avis-situation-dclarative@2x.png">'>ou le dernier avis de situation déclarative à l’impôt sur le revenu.</li>
+                                    </ul>
+                                    <ul class="hidden-lg">
+                                        <li data-toggle="modal" data-target="#avis-impots" title='<img src="assets/img/amex_specimen_avis-impots@2x.png">'>le dernier avis d’impôt sur le revenu,</li>
+                                        <li data-toggle="modal" data-target="#avis-situation" title='<img src="assets/img/amex_specimen_avis-situation-dclarative@2x.png">'>ou le dernier avis de situation déclarative à l’impôt sur le revenu.</li>
                                     </ul>
                                     <p><strong>Ne sont pas acceptés les déclarations de revenus.</strong></p>
                                 </div>
@@ -165,6 +169,26 @@
                                 <h3>PDF</h3>
                                 <h4>Pour optimiser le traitement de votre document, envoyez-nous, de préférence, la version pdf.</h4>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="avis-impots" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/img/amex_specimen_avis-impots@2x.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="avis-situation" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/img/amex_specimen_avis-situation-dclarative@2x.png">
                         </div>
                     </div>
                 </div>
