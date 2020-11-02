@@ -14723,35 +14723,37 @@ p,
 a,
 li,
 span {
-  font-family: 'Helvetica-Neue-Light';
+  font-family: 'Helvetica-Neue-Regular';
+  letter-spacing: 0;
 }
 
-/* line 44, src/assets/scss/themes/_amex.scss */
+/* line 45, src/assets/scss/themes/_amex.scss */
 strong,
 .strong {
-  font-family: 'Helvetica-Neue-Light';
+  font-family: 'Helvetica-Neue-Regular';
   font-weight: bold;
+  letter-spacing: 0;
 }
 
-/* line 50, src/assets/scss/themes/_amex.scss */
+/* line 52, src/assets/scss/themes/_amex.scss */
 p {
   color: #53565A;
   margin-bottom: 0;
 }
 
-/* line 55, src/assets/scss/themes/_amex.scss */
+/* line 57, src/assets/scss/themes/_amex.scss */
 nav {
   padding: 8px 0 8px 40px;
 }
 
-/* line 59, src/assets/scss/themes/_amex.scss */
+/* line 61, src/assets/scss/themes/_amex.scss */
 .marged {
   margin-left: 90px;
   margin-right: 90px;
 }
 
 @media (max-width: 1023.98px) {
-  /* line 59, src/assets/scss/themes/_amex.scss */
+  /* line 61, src/assets/scss/themes/_amex.scss */
   .marged {
     margin-left: 40px;
     margin-right: 40px;
@@ -14759,29 +14761,29 @@ nav {
 }
 
 @media (max-width: 767.98px) {
-  /* line 59, src/assets/scss/themes/_amex.scss */
+  /* line 61, src/assets/scss/themes/_amex.scss */
   .marged {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
-/* line 74, src/assets/scss/themes/_amex.scss */
+/* line 76, src/assets/scss/themes/_amex.scss */
 .margin-top {
   margin-top: 40px;
 }
 
-/* line 78, src/assets/scss/themes/_amex.scss */
+/* line 80, src/assets/scss/themes/_amex.scss */
 .margin-top-sm {
   margin-top: 20px;
 }
 
-/* line 82, src/assets/scss/themes/_amex.scss */
+/* line 84, src/assets/scss/themes/_amex.scss */
 .margin-top-xs {
   margin-top: 10px;
 }
 
-/* line 86, src/assets/scss/themes/_amex.scss */
+/* line 88, src/assets/scss/themes/_amex.scss */
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14808,28 +14810,28 @@ header {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 86, src/assets/scss/themes/_amex.scss */
+  /* line 88, src/assets/scss/themes/_amex.scss */
   header {
     background-image: url("../img/header-lg@2x.png");
   }
 }
 
 @media (max-width: 1023.98px) {
-  /* line 86, src/assets/scss/themes/_amex.scss */
+  /* line 88, src/assets/scss/themes/_amex.scss */
   header {
     background-image: url("../img/header-md.png");
   }
 }
 
 @media (max-width: 1023.98px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023.98px) and (min-resolution: 192dpi) {
-  /* line 86, src/assets/scss/themes/_amex.scss */
+  /* line 88, src/assets/scss/themes/_amex.scss */
   header {
     background-image: url("../img/header-md@2x.png");
   }
 }
 
 @media (max-width: 767.98px) {
-  /* line 86, src/assets/scss/themes/_amex.scss */
+  /* line 88, src/assets/scss/themes/_amex.scss */
   header {
     background-image: url("../img/header-sm.png");
     height: 510px;
@@ -14843,13 +14845,13 @@ header {
 }
 
 @media (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767.98px) and (min-resolution: 192dpi) {
-  /* line 86, src/assets/scss/themes/_amex.scss */
+  /* line 88, src/assets/scss/themes/_amex.scss */
   header {
     background-image: url("../img/header-sm@2x.png");
   }
 }
 
-/* line 126, src/assets/scss/themes/_amex.scss */
+/* line 128, src/assets/scss/themes/_amex.scss */
 h1 {
   text-align: left;
   font-family: "Helvetica-neue-light";
@@ -14864,7 +14866,7 @@ h1 {
 }
 
 @media (max-width: 767.98px) {
-  /* line 126, src/assets/scss/themes/_amex.scss */
+  /* line 128, src/assets/scss/themes/_amex.scss */
   h1 {
     font-size: 28px;
     line-height: 32px;
@@ -14874,7 +14876,7 @@ h1 {
   }
 }
 
-/* line 147, src/assets/scss/themes/_amex.scss */
+/* line 149, src/assets/scss/themes/_amex.scss */
 h2 {
   text-align: left;
   font-family: "BentonSans-Book";
@@ -14888,7 +14890,7 @@ h2 {
   text-transform: none;
 }
 
-/* line 160, src/assets/scss/themes/_amex.scss */
+/* line 162, src/assets/scss/themes/_amex.scss */
 h3 {
   text-align: left;
   font-family: "BentonSans-Book";
@@ -14901,7 +14903,7 @@ h3 {
   text-transform: none;
 }
 
-/* line 172, src/assets/scss/themes/_amex.scss */
+/* line 174, src/assets/scss/themes/_amex.scss */
 h4 {
   text-align: left;
   font-family: "BentonSans-Book";
@@ -14914,7 +14916,7 @@ h4 {
   text-transform: none;
 }
 
-/* line 185, src/assets/scss/themes/_amex.scss */
+/* line 187, src/assets/scss/themes/_amex.scss */
 ul {
   list-style: none;
   margin-bottom: 0;
@@ -14938,18 +14940,18 @@ ul {
   padding: 0;
 }
 
-/* line 196, src/assets/scss/themes/_amex.scss */
+/* line 198, src/assets/scss/themes/_amex.scss */
 ul > li {
   color: #006FCF;
 }
 
-/* line 199, src/assets/scss/themes/_amex.scss */
+/* line 201, src/assets/scss/themes/_amex.scss */
 ul > li::before {
   content: '- ';
 }
 
 @media (max-width: 767.98px) {
-  /* line 205, src/assets/scss/themes/_amex.scss */
+  /* line 207, src/assets/scss/themes/_amex.scss */
   h2.docs {
     padding: 85px 0 0 0;
     background-image: url("../img/icon-doc.png");
@@ -14959,7 +14961,7 @@ ul > li::before {
   }
 }
 
-/* line 215, src/assets/scss/themes/_amex.scss */
+/* line 217, src/assets/scss/themes/_amex.scss */
 div.docs {
   background-image: url("../img/icon-doc.png");
   background-position: left center;
@@ -14969,74 +14971,74 @@ div.docs {
 }
 
 @media (max-width: 767.98px) {
-  /* line 215, src/assets/scss/themes/_amex.scss */
+  /* line 217, src/assets/scss/themes/_amex.scss */
   div.docs {
     padding: 0;
     background-image: none;
   }
 }
 
-/* line 228, src/assets/scss/themes/_amex.scss */
+/* line 230, src/assets/scss/themes/_amex.scss */
 div.flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-/* line 232, src/assets/scss/themes/_amex.scss */
+/* line 234, src/assets/scss/themes/_amex.scss */
 div.encart {
   padding: 20px;
   width: 100%;
 }
 
-/* line 236, src/assets/scss/themes/_amex.scss */
+/* line 238, src/assets/scss/themes/_amex.scss */
 div.encart > h3 {
   margin-bottom: 10px;
 }
 
-/* line 240, src/assets/scss/themes/_amex.scss */
+/* line 242, src/assets/scss/themes/_amex.scss */
 div.encart.gris {
   background-color: #F7F8F9;
 }
 
 @media (max-width: 1023.98px) {
-  /* line 240, src/assets/scss/themes/_amex.scss */
+  /* line 242, src/assets/scss/themes/_amex.scss */
   div.encart.gris {
     margin-bottom: 40px;
   }
-  /* line 246, src/assets/scss/themes/_amex.scss */
+  /* line 248, src/assets/scss/themes/_amex.scss */
   div.encart.gris br {
     content: ' ';
     width: 9px;
     height: 18px;
   }
-  /* line 251, src/assets/scss/themes/_amex.scss */
+  /* line 253, src/assets/scss/themes/_amex.scss */
   div.encart.gris br::before {
     content: ' ';
   }
 }
 
-/* line 258, src/assets/scss/themes/_amex.scss */
+/* line 260, src/assets/scss/themes/_amex.scss */
 div.encart.bleu {
   background-color: #006FCF;
 }
 
-/* line 261, src/assets/scss/themes/_amex.scss */
+/* line 263, src/assets/scss/themes/_amex.scss */
 div.encart.bleu > h3 {
   color: #FFFFFF;
 }
 
-/* line 265, src/assets/scss/themes/_amex.scss */
+/* line 267, src/assets/scss/themes/_amex.scss */
 div.encart.bleu > h4 {
   color: #FFFFFF;
 }
 
-/* line 271, src/assets/scss/themes/_amex.scss */
+/* line 273, src/assets/scss/themes/_amex.scss */
 footer {
   margin-top: 40px;
 }
 
-/* line 274, src/assets/scss/themes/_amex.scss */
+/* line 276, src/assets/scss/themes/_amex.scss */
 footer p {
   color: #53565A;
   font-size: 15px;
@@ -15046,19 +15048,19 @@ footer p {
   margin: 0;
 }
 
-/* line 282, src/assets/scss/themes/_amex.scss */
+/* line 284, src/assets/scss/themes/_amex.scss */
 footer p > a {
   color: #006FCF;
   font-weight: normal;
   text-decoration: none;
 }
 
-/* line 288, src/assets/scss/themes/_amex.scss */
+/* line 290, src/assets/scss/themes/_amex.scss */
 footer p > hr {
   margin: 21px 0;
 }
 
-/* line 293, src/assets/scss/themes/_amex.scss */
+/* line 295, src/assets/scss/themes/_amex.scss */
 footer span {
   color: #97999B;
   font-size: 15px;
@@ -15066,19 +15068,19 @@ footer span {
 }
 
 @media (min-width: 1024px) {
-  /* line 301, src/assets/scss/themes/_amex.scss */
+  /* line 303, src/assets/scss/themes/_amex.scss */
   .carousel-container {
     margin-top: 20px;
   }
 }
 
-/* line 307, src/assets/scss/themes/_amex.scss */
+/* line 309, src/assets/scss/themes/_amex.scss */
 div.carousel-item > img {
   width: 100%;
   height: auto;
 }
 
-/* line 312, src/assets/scss/themes/_amex.scss */
+/* line 314, src/assets/scss/themes/_amex.scss */
 .carousel-control-prev-icon {
   background-image: url("../img/arrow-left.svg");
   height: 40px;
@@ -15086,13 +15088,13 @@ div.carousel-item > img {
 }
 
 @media (max-width: 767.98px) {
-  /* line 312, src/assets/scss/themes/_amex.scss */
+  /* line 314, src/assets/scss/themes/_amex.scss */
   .carousel-control-prev-icon {
     display: none;
   }
 }
 
-/* line 322, src/assets/scss/themes/_amex.scss */
+/* line 324, src/assets/scss/themes/_amex.scss */
 .carousel-control-next-icon {
   background-image: url("../img/arrow-right.svg");
   height: 40px;
@@ -15100,18 +15102,18 @@ div.carousel-item > img {
 }
 
 @media (max-width: 767.98px) {
-  /* line 322, src/assets/scss/themes/_amex.scss */
+  /* line 324, src/assets/scss/themes/_amex.scss */
   .carousel-control-next-icon {
     display: none;
   }
 }
 
-/* line 332, src/assets/scss/themes/_amex.scss */
+/* line 334, src/assets/scss/themes/_amex.scss */
 .carousel-indicators {
   margin-bottom: 0;
 }
 
-/* line 336, src/assets/scss/themes/_amex.scss */
+/* line 338, src/assets/scss/themes/_amex.scss */
 .carousel-indicators li {
   background-image: url("../img/dot.svg");
   height: 40px;
@@ -15121,7 +15123,7 @@ div.carousel-item > img {
   margin: 0;
 }
 
-/* line 345, src/assets/scss/themes/_amex.scss */
+/* line 347, src/assets/scss/themes/_amex.scss */
 .carousel-indicators li.active {
   background-image: url("../img/dot-active.svg");
   height: 40px;
@@ -15129,13 +15131,13 @@ div.carousel-item > img {
 }
 
 @media (min-width: 576px) {
-  /* line 351, src/assets/scss/themes/_amex.scss */
+  /* line 353, src/assets/scss/themes/_amex.scss */
   br.cesure-mobile {
     display: none;
   }
 }
 
-/* line 357, src/assets/scss/themes/_amex.scss */
+/* line 359, src/assets/scss/themes/_amex.scss */
 .tooltip {
   -webkit-box-shadow: 7px 8px 5px -6px rgba(0, 0, 0, 0.75);
           box-shadow: 7px 8px 5px -6px rgba(0, 0, 0, 0.75);
@@ -15143,17 +15145,17 @@ div.carousel-item > img {
   opacity: 1 !important;
 }
 
-/* line 363, src/assets/scss/themes/_amex.scss */
+/* line 365, src/assets/scss/themes/_amex.scss */
 .bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="right"] .arrow::before {
   border-right-color: #FFFFFF;
 }
 
-/* line 367, src/assets/scss/themes/_amex.scss */
+/* line 369, src/assets/scss/themes/_amex.scss */
 .tooltip-inner {
   background-color: #FFFFFF;
 }
 
-/* line 371, src/assets/scss/themes/_amex.scss */
+/* line 373, src/assets/scss/themes/_amex.scss */
 .carousel-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15175,7 +15177,7 @@ div.carousel-item > img {
 }
 
 @media (max-width: 767.98px) {
-  /* line 371, src/assets/scss/themes/_amex.scss */
+  /* line 373, src/assets/scss/themes/_amex.scss */
   .carousel-header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -15184,7 +15186,7 @@ div.carousel-item > img {
   }
 }
 
-/* line 383, src/assets/scss/themes/_amex.scss */
+/* line 385, src/assets/scss/themes/_amex.scss */
 .carousel-header > a {
   width: 50%;
   text-align: left;
@@ -15192,7 +15194,7 @@ div.carousel-item > img {
   text-decoration: none;
   color: #006FCF;
   font-size: 18px;
-  font-family: 'Helvetica-Neue';
+  font-family: 'Helvetica-Neue-Regular';
   font-weight: 600;
   line-height: 18px;
   border-top: 1px solid #D9D9D6;
@@ -15200,50 +15202,50 @@ div.carousel-item > img {
 }
 
 @media (max-width: 767.98px) {
-  /* line 383, src/assets/scss/themes/_amex.scss */
+  /* line 385, src/assets/scss/themes/_amex.scss */
   .carousel-header > a {
     width: 100%;
   }
-  /* line 399, src/assets/scss/themes/_amex.scss */
+  /* line 401, src/assets/scss/themes/_amex.scss */
   .carousel-header > a:nth-child(1) {
     border-right: 1px solid #D9D9D6;
   }
 }
 
-/* line 404, src/assets/scss/themes/_amex.scss */
+/* line 406, src/assets/scss/themes/_amex.scss */
 .carousel-header > a:nth-child(2) {
   border-right: 1px solid #D9D9D6;
 }
 
-/* line 408, src/assets/scss/themes/_amex.scss */
+/* line 410, src/assets/scss/themes/_amex.scss */
 .carousel-header > a.carousel-header-active {
   border-top: 3px solid #00175A;
   padding-top: 22px;
   color: #00175A;
 }
 
-/* line 416, src/assets/scss/themes/_amex.scss */
+/* line 418, src/assets/scss/themes/_amex.scss */
 .carousel-body {
   border: 1px solid #D9D9D6;
   padding: 24px;
 }
 
 @media (max-width: 767.98px) {
-  /* line 416, src/assets/scss/themes/_amex.scss */
+  /* line 418, src/assets/scss/themes/_amex.scss */
   .carousel-body {
     padding: 0;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 425, src/assets/scss/themes/_amex.scss */
+  /* line 427, src/assets/scss/themes/_amex.scss */
   .hidden-lg {
     display: none;
   }
 }
 
 @media (max-width: 1023.98px) {
-  /* line 431, src/assets/scss/themes/_amex.scss */
+  /* line 433, src/assets/scss/themes/_amex.scss */
   .hidden-md {
     display: none;
   }

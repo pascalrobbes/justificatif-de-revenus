@@ -13,18 +13,21 @@ $(document).ready(function () {
   }
 
   $(".carousel-header>a").on("click", function () {
+    var target = $(this).attr("data-target");
     $(".carousel-header>a").removeClass("carousel-header-active");
     $(this).addClass("carousel-header-active");
+    $("div.carousel-body > div").css("display","none");
+    $("div#"+target).css("display","block");
   });
 
 });
 
 function mobileActions() {
   
-  $("div.carousel-header a[data-position=1]").addClass("carousel-header-active");
-  $("div.carousel-header a[data-position=0]").removeClass("carousel-header-active");
-  $("div#carousel-desktop-container").removeClass('show active');
-  $("div#carousel-mobile-container").addClass('show active');
+  $("div.carousel-header a[data-target=carousel-mobile-container]").addClass("carousel-header-active");
+  $("div.carousel-header a[data-target=carousel-desktop-container]").removeClass("carousel-header-active");
+  $("div#carousel-desktop-container").addClass('is-hidden');
+  $("div#carousel-mobile-container").removeClass('is-hidden');
   $('.has_tooltip').tooltip({
     placement: 'bottom',
     template: '<div class="tooltip" role="tooltip"><div class="tooltip-inner"></div></div>',
@@ -33,7 +36,7 @@ function mobileActions() {
 
 function desktopActions() {
   $('.has_tooltip').tooltip({
-    placement: 'right',
+    placement: 'bottom',
     template: '<div class="tooltip" role="tooltip"><div class="tooltip-inner"></div></div>',
     html: true
   })
